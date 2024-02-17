@@ -1,50 +1,55 @@
-Nivel Básico:
+Primeros ejercicios Laravel
 
-Instalación de Laravel:
+---
 
-Instala Composer si aún no lo tienes.
-Abre la terminal o CMD y ejecuta el comando composer create-project --prefer-dist laravel/laravel nombre-del-proyecto.
-Crear una Ruta Simple:
+**Nivel Básico:**
 
-Abre el archivo routes/web.php.
-Agrega una nueva ruta utilizando Route::get().
-Retorna una cadena de texto con el mensaje "Hola Mundo".
-Crear una Vista:
+1. **Instalación de Laravel:**
+   - Instala Composer si aún no lo tienes.
+   - Abre la terminal o CMD y ejecuta el comando `composer create-project --prefer-dist laravel/laravel nombre-del-proyecto`.
 
-Crea un nuevo archivo Blade en la carpeta resources/views.
-Utiliza la sintaxis de Blade para mostrar el mensaje.
-Desde la ruta, devuelve la vista utilizando view('nombre-de-la-vista').
-Enviar Datos a una Vista:
+2. **Crear una Ruta Simple:**
+   - Abre el archivo `routes/web.php`.
+   - Agrega una nueva ruta utilizando `Route::get()`.
+   - Retorna una cadena de texto con el mensaje "Hola Mundo".
 
-Desde la ruta, envía un array con los datos utilizando view('nombre-de-la-vista', ['datos' => $datos]).
-En la vista, accede a los datos utilizando la sintaxis de Blade {{ $datos['clave'] }}.
-Crear un Controlador:
+3. **Crear una Vista:**
+   - Crea un nuevo archivo Blade en la carpeta `resources/views`.
+   - Utiliza la sintaxis de Blade para mostrar el mensaje.
+   - Desde la ruta, devuelve la vista utilizando `view('nombre-de-la-vista')`.
 
-Ejecuta php artisan make:controller NombreController en la terminal para generar un nuevo controlador.
-Define un método en el controlador que devuelve una vista.
-Crea una nueva ruta que apunte al método del controlador.
-Nivel Intermedio:
+4. **Enviar Datos a una Vista:**
+   - Desde la ruta, envía un array con los datos utilizando `view('nombre-de-la-vista', ['datos' => $datos])`.
+   - En la vista, accede a los datos utilizando la sintaxis de Blade `{{ $datos['clave'] }}`.
 
-Crear un Modelo y Migración:
+5. **Crear un Controlador:**
+   - Ejecuta `php artisan make:controller NombreController` en la terminal para generar un nuevo controlador.
+   - Define un método en el controlador que devuelve una vista.
+   - Crea una nueva ruta que apunte al método del controlador.
 
-Ejecuta el comando php artisan make:model Nombre -m para generar un modelo junto con su migración.
-Define la estructura de la tabla en el archivo de migración y ejecuta php artisan migrate.
-Crear un Formulario:
+---
 
-Define una nueva ruta en routes/web.php para mostrar el formulario.
-Crea una vista con un formulario HTML que envíe datos a una nueva ruta.
-Guardar Datos en la Base de Datos:
+**Nivel Intermedio:**
 
-Define una nueva ruta en routes/web.php para procesar el formulario.
-En el controlador, valida y guarda los datos en la base de datos utilizando el modelo.
-Mostrar Lista de Productos:
+1. **Crear un Modelo y Migración:**
+   - Ejecuta el comando `php artisan make:model Nombre -m` para generar un modelo junto con su migración.
+   - Define la estructura de la tabla en el archivo de migración y ejecuta `php artisan migrate`.
 
-Define una nueva ruta en routes/web.php para mostrar la lista de productos.
-Crea un controlador llamado ProductoController y en su método mostrarProductos() obtén todos los productos desde el modelo y envíalos a la vista.
-Editar y Eliminar Productos:
+2. **Crear un Formulario:**
+   - Define una nueva ruta en `routes/web.php` para mostrar el formulario.
+   - Crea una vista con un formulario HTML que envíe datos a una nueva ruta.
 
-Define rutas en routes/web.php para editar y eliminar productos y apunta a los métodos correspondientes en el controlador.
-Implementa la lógica para actualizar y eliminar productos en el controlador.
+3. **Guardar Datos en la Base de Datos:**
+   - Define una nueva ruta en `routes/web.php` para procesar el formulario.
+   - En el controlador, valida y guarda los datos en la base de datos utilizando el modelo.
+
+4. **Mostrar Lista de Productos:**
+   - Define una nueva ruta en `routes/web.php` para mostrar la lista de productos.
+   - Crea un controlador llamado `ProductoController` y en su método `mostrarProductos()` obtén todos los productos desde el modelo y envíalos a la vista.
+
+5. **Editar y Eliminar Productos:**
+   - Define rutas en `routes/web.php` para editar y eliminar productos y apunta a los métodos correspondientes en el controlador.
+   - Implementa la lógica para actualizar y eliminar productos en el controlador.
 
 ---
 
