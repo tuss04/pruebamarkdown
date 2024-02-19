@@ -9,20 +9,21 @@ Primeros ejercicios Laravel
    ~~- Abre la terminal o CMD y ejecuta el comando `composer create-project --prefer-dist laravel/laravel nombre-del-proyecto`.~~
 
 2. **Crear una Ruta Simple:**
+
    ~~- Abre el archivo `routes/web.php`.~~
    ~~- Agrega una nueva ruta utilizando `Route::get()`.~~
    ~~- Retorna una cadena de texto con el mensaje "Hola Mundo".~~
 
-3. **Crear una Vista:**
+4. **Crear una Vista:**
    ~~- Crea un nuevo archivo Blade en la carpeta `resources/views`.~~
    ~~- Utiliza la sintaxis de Blade para mostrar el mensaje.~~
    ~~- Desde la ruta, devuelve la vista utilizando `view('nombre-de-la-vista')`.~~
 
-4. **Enviar Datos a una Vista:**
+5. **Enviar Datos a una Vista:**
    - Desde la ruta, envía un array con los datos utilizando `view('nombre-de-la-vista', ['datos' => $datos])`.
    - En la vista, accede a los datos utilizando la sintaxis de Blade `{{ $datos['clave'] }}`.
 
-5. **Crear un Controlador:**
+6. **Crear un Controlador:**
    - Ejecuta `php artisan make:controller NombreController` en la terminal para generar un nuevo controlador.
    - Define un método en el controlador que devuelve una vista.
    - Crea una nueva ruta que apunte al método del controlador.
