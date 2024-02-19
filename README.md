@@ -5,18 +5,18 @@ Primeros ejercicios Laravel
 **Nivel Básico:**
 
 1. **Instalación de Laravel:**
-   - Instala Composer si aún no lo tienes.
-   - Abre la terminal o CMD y ejecuta el comando `composer create-project --prefer-dist laravel/laravel nombre-del-proyecto`.
+   ~~- Instala Composer si aún no lo tienes.~~
+   ~~- Abre la terminal o CMD y ejecuta el comando `composer create-project --prefer-dist laravel/laravel nombre-del-proyecto`.~~
 
 2. **Crear una Ruta Simple:**
-   - Abre el archivo `routes/web.php`.
-   - Agrega una nueva ruta utilizando `Route::get()`.
-   - Retorna una cadena de texto con el mensaje "Hola Mundo".
+   ~~- Abre el archivo `routes/web.php`.~~
+   ~~- Agrega una nueva ruta utilizando `Route::get()`.~~
+   ~~- Retorna una cadena de texto con el mensaje "Hola Mundo".~~
 
 3. **Crear una Vista:**
-   - Crea un nuevo archivo Blade en la carpeta `resources/views`.
-   - Utiliza la sintaxis de Blade para mostrar el mensaje.
-   - Desde la ruta, devuelve la vista utilizando `view('nombre-de-la-vista')`.
+   ~~- Crea un nuevo archivo Blade en la carpeta `resources/views`.~~
+   ~~- Utiliza la sintaxis de Blade para mostrar el mensaje.~~
+   ~~- Desde la ruta, devuelve la vista utilizando `view('nombre-de-la-vista')`.~~
 
 4. **Enviar Datos a una Vista:**
    - Desde la ruta, envía un array con los datos utilizando `view('nombre-de-la-vista', ['datos' => $datos])`.
