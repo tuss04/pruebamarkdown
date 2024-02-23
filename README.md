@@ -273,14 +273,6 @@ public function editarProducto($id)
     return view('productos.editar', ['producto' => $producto]);
 }
 
-public function actualizarProducto(Request $request, $id)
-{
-    // Validar y actualizar el producto
-}
 
-public function eliminarProducto($id)
-{
-    // Eliminar el producto de la base de datos
-}
 ```
 
