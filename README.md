@@ -273,6 +273,35 @@ public function editarProducto($id)
     return view('productos.editar', ['producto' => $producto]);
 }
 
+public function actualizarProducto(Request $request, $id)
+ {
+     $request->validate([
+         'nombre' => 'required|string|max:255',
+         'precio' => 'required|numeric|min:0',
+     ]);
 
+     $producto = Producto::find($id);
+     if (!$producto) {
+         return redirect('/productos')->with('error', 'Producto no encontrado.');
+     }
+
+     $producto->nombre = $request->nombre;
+     $producto->precio = $request->precio;
+     $producto->save();
+
+     return redirect('/productos')->with('success', 'Producto actualizado correctamente.');
+ }
+
+ public function eliminarProducto($id)
+ {
+     $producto = Producto::find($id);
+     if (!$producto) {
+         return redirect('/productos')->with('error', 'Producto no encontrado.');
+     }
+
+     $producto->delete();
+
+     return redirect('/productos')->with('success', 'Producto eliminado correctamente.');
+ }
 ```
 
